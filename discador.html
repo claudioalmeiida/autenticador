@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Discador - Spider SoftHouse</title>
+        <link rel="icon" type="image/ico" href="../../imagens/MiniLogo.ico"/>
+        <link rel=stylesheet href="../../assets/estilos.css" type="text/css" />
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-25024420-1']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+    </head>
+    <body>
+    	<div id="corpo">
+    		<div id="topo">
+    			<div id="logo" onclick="window.location.href='../../index.html'"></div>
+    			<div id="menu">
+	    			<div id="menu_botoes">
+	    				<div id="home" onclick="window.location.href='../../index.html'"></div>
+	    				<div id="empresa" onclick="window.location.href='../empresa.html'"></div>
+	    				<div id="servicos_select" onclick="window.location.href='../servicos.html'"></div>
+	    				<div id="suporte" onclick="window.location.href='../suporte.html'"></div>
+	    				<div id="menu_noticias" onclick="window.location.href='../noticias/noticias.html'"></div>
+	    				<div id="contato" onclick="window.location.href='../contato.html'"></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div id="web_wide_conteudo">
+    			<div id="discador_banner"></div>
+    			<div id="discador_destaque">
+				<p>O Discador é uma boa alternativa para quem disponibiliza acesso discado a internet. Existem duas versões do discador, versão paga e versão 
+				gratuita, porém a versão paga encontra-se temporariamente indisponível. </p>
+    				<h4>Disponível aos clientes do provedor:</h4>
+    				<br />
+    				<h4>Autenticador de conexão PPPoE (Beta)</h4>
+    					Versão para Windows XP/2003/Vista/7/2008. 
+    					<br />
+    					A WebMikrotik trabalha com duas versões para o autenticador, uma grátis (com propaganda) e a versão paga (sem propaganda) 
+    					que custa R$ 200,00. Abaixo as imagens das duas versões:
+    					<br /><br /><br /> 
+    				<div style="width: 50%; text-align: center; float: left;">
+    					<img src="../../imagens/servicos/autenticador-mini.jpg" />
+    				</div>
+    				<div style="width: 50%; text-align: center; float: left;">
+    					<img src="../../imagens/servicos/autenticador-propaganda-mini.jpg" />
+    					<br /><br />
+    				</div>
+    				
+    					<h4 style="color:red;">A versão paga do discador está temporariamente indisponível.</h4>
+    					
+    					<h4>Como criar um autenticador de conexão PPPoE personalizado:<br />
+    					(versão gratuita)</h4>
+    					Aqui explicaremos como criar o autenticador personalizado para seu provedor, começaremos com a instalação do programa necessário para a criação do 
+    					instalador, o Inno Setup Compiler, segue o link:<br /><br />
+    					<a href="http://www.webmikrotik.com.br/download.php?local=autenticador&arquivo=ispack-5.3.9.exe">Inno Setup QuickStart Pack 5.3.9</a><br /><br />
+    					A instalação do Inno Setup QuickStart Pack é bem simples, só ir avançando…<br /><br />
+    					<img src="../../imagens/servicos/passo-1.jpg" />
+    					<br /><br />
+    					Caso queira adicionar mais opções ao programa de instalação do autenticador, você pode instalar também o ISTool, que é um programa que auxilia na criação 
+    					de scripts para o Inno Setup Compiler. Neste tutorial não iremos trabalhar com ISTool, mas caso queira instalar marque a opção "Download and install ISTool" 
+    					conforme na imagem abaixo.
+    					<br /><br />
+    					<img src="../../imagens/servicos/passo-2.jpg" />
+    					<br /><br />
+    					A próxima tela irá perguntar se você deseja instalar o Inno Setup Preprocessor, deixe marcada a opção "Install Inno Setup Preprocessor", pois para poder 
+    					compilar o instalador precisaremos deste add-on.
+						<br /><br />
+    					<img src="../../imagens/servicos/passo-3.jpg" />
+    					<br /><br />
+    					Depois virá a tela perguntando se você gostaria de instalar o suporte a encriptação, deixe marcada a opção "Download and install encryption support", 
+    					agora é só ir avançando…
+    					<br /><br />
+    					<img src="../../imagens/servicos/passo-4.jpg" />
+    					<br /><br />
+    					Após a instalação Inno Setup QuickStart Pack, baixe o arquivo compactado que contém todos os arquivos necessários para que você possa fazer a compilação 
+    					do instalador, segue o link:
+    					<br /><br />
+    					<a href="http://www.webmikrotik.com.br/download.php?local=autenticador&arquivo=autenticador.rar">Arquivos do Instalador do autenticador de conexão PPPoE (não compilado)</a>
+    					<br /><br />
+    					Após feito o download, descompacte o arquivo em algum local de sua preferência. Caso você não tenha o WinRAR para descompactar o arquivo, segue o link para download:
+    					<br /><br />
+    					<a href="http://www.webmikrotik.com.br/download.php?local=autenticador&arquivo=wrar393br.exe">WinRAR 3.93</a>
+    					<br /><br />
+    					Após descompactado, abra o Inno Setup Compiler, se aparecer a janela "Welcome" você clique no botão "Cancel", após isso clique no menu "File" > "Open..."
+    					<br /><br />
+    					<img src="../../imagens/servicos/passo-5.jpg" />
+    					<br /><br />
+    					Procure a pasta que você descompactou e abra o arquivo script.iss, após abrir o arquivo, procure as seguintes linhas:
+    					<br /><br />
+    					
+    					<span style="font-family: 'Courier New',Courier,monospace; font-size: 12px; color: rgb(255, 0, 0);define nome ">#define nome "Autenticador Provedor NET.BR"<br />
+    					#define empresa "NET.BR Serviços de Internet"<br />
+    					#define url "http://www.provedor.net.br/"<br />
+    					#define logo "logo.png"<br />
+    					#define icone "icone.ico"
+    					</span>
+    					<br /><br />
+    					Agora altere as linhas, colocando os seus dados. Lembrando que os dados devem estar entre as aspas para que não haja falha na compilação. 
+    					Vamos especificar o que cada variável representa:
+    					<br /><br />
+    					
+    					<strong><span style="color:red;">nome</span></strong> = Nome do autenticador, o instalador terá parte deste nome e o executável do autenticador.
+    					<br /><br />
+    					
+    					<strong><span style="color:red;">empresa</span></strong> = Empresa que compilou o instalador, sua empresa.
+    					<br /><br />
+    					
+    					<strong><span style="color:red;">url</span></strong> = Endereço para qual o cliente será redirecionado ao se conectar pelo autenticador.
+    					<br /><br />
+    					
+    					<strong><span style="color:red;">logo</span></strong> = É o nome da imagem que o autenticador terá, deverá estar na mesma pasta onde foi descompactado os arquivos, recomendamos que o tamanho 
+    					da imagem seja 330x115 pixels no formato .bmp, .gif, .jpg, .png ou .tif, caso queira a imagem com transparência, use o formato .png.
+    					<br /><br />
+    					
+    					INFORMAÇÂO: Quando você baixa o arquivo para compilação, dentro dele tem um arquivo de demostração do formato do logo, com o nome logo.psd, 
+    					pode ser aberto pelo programa Photoshop.
+    					<br /><br />
+    					<strong><span style="color:red;">icone</span></strong> = Nome do arquivo de ícone do autenticador, deverá estar na mesma pasta onde foi descompactado os arquivos, vem com um ícone padrão do 
+    					autenticador, mas pode ser alterado, basta você criar um ícone com 3 tamanhos dentro do mesmo arquivo, os tamanhos são: 16x16, 32x32 e 48x48 
+    					pixels, deve estar com a extenção .ico, recomendamos o programa MicroAngelo Toolset para edição dos ícones, segue o link para download do programa (trial):
+    					<br /><br />
+    					
+						<a href="http://www.webmikrotik.com.br/download.php?local=autenticador&arquivo=mt610-70-eval.exe">MicroAngelo Toolset 6.10.0070</a>
+						<br /><br />
+						
+						Caso tenha conhecimento do software Inno Setup Compiler, pode editar as opções para personalizar a instalação do autenticador, após terminar 
+						a edição, salve o arquivo, depois clique no menu "Run" > "Run" ou precione "F9"
+						<br /><br />
+    					<img src="../../imagens/servicos/passo-6.jpg" />
+    					<br /><br />
+    					Pronto, o Inno Setup Compiler irá compilar o instalador na mesma pasta dos arquivos descompactados, segue o link para o arquivo de demonstração 
+    					compilado do instalador.
+    					<br /><br />
+    					
+    					<a href="http://www.webmikrotik.com.br/download.php?local=autenticador&arquivo=setup-autenticador.exe">Instalador do autenticador de conexão PPPoE (compilado)</a>
+    					<br /><br /><br />
+						
+    			</div>
+    		</div>
+		</div>
+		<div id="rodape">
+    		<div id="encaixe"></div>
+    		<div id="conteudo_rodape">
+	    		<div id="sobre_wide">
+	    			<div id="sobre_wide_titulo"></div>
+	    			<div id="sobre_wide_texto">
+	    				O Wide Manager ainda não está pronto, mas você pode conhecer um pouco sobre os recursos que estarão disponíveis em seu lançamento visualizando 
+	    				nossa <a href="../revista.html">Revista On-line.</a>
+	    			</div>
+	       		</div>
+	       		<div id="lado_b">
+		       		<div id="wide_logo"></div>
+		       		<div id="midias_servicos">
+		       			<div id="facebook" onClick="javascript:window.open('http://www.facebook.com/pages/Spider-Softhouse/177304555632252');return true;"></div>
+		       			<div id="twitter" onClick="javascript:window.open('http://twitter.com/SpiderSofthouse');return true;"></div>
+		       			<div id="contato_rodape" onclick="window.location.href='../contato.html'"></div>
+		       		</div>
+		       	</div>
+       		</div>
+    	</div>
+	</body>
+</html>
